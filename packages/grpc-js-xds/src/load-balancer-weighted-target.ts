@@ -232,6 +232,7 @@ export class WeightedTargetLoadBalancer implements LoadBalancer {
   /**
    * Map of target names to target children. Includes current targets and
    * previous targets with deactivation timers that have not yet triggered.
+   * ask Peter about this point
    */
   private targets: Map<string, WeightedChild> = new Map<string, WeightedChild>();
   /**
